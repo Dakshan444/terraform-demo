@@ -49,7 +49,14 @@ variable "vm_size" {
     default = "Standard_B1s"
 }
 
+//add a variable name with os and give description, type. inside type add publisher,offer,sku,version and add sample values for it
 variable "os" {
+    default = {
+        publisher = "MicrosoftWindowsServer"
+        offer = "WindowsServer"
+        sku = "2019-Datacenter"
+        version = "latest"
+    }
     description = "OS image to deploy"
     type = object({
         publisher = string
