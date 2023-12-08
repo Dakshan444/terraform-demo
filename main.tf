@@ -94,3 +94,4 @@ resource "azurerm_virtual_machine" "vm" {
   }
 }
 
+    //q: What is fullform of MERN stack in development
